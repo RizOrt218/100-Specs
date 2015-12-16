@@ -301,11 +301,20 @@ Pen.prototype.write = function( msg, color ){
  */
 function Garden ( plantsTotal, isWatered ){
   this.plantsTotal = plantsTotal;
-  this.isWatered = isWatered;
+  this.isWatered = false;
 }
 
-Garden.prototype.water = function(){
-  this.isWatered = true;
+Garden.prototype.water = function( ){
+    this.isWatered = true;
+    return this.isWatered;
+};
+
+Garden.prototype.grow = function( ){
+  if( this.isWatered === true ){
+    return this.plantsTotal += 1;
+  } else {
+    return false;
+  }
 };
 
 /* Step 32
