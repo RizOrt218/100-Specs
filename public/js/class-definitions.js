@@ -109,20 +109,9 @@ var drink = function( type ){
   }
 };
 
-/* Step 24
- *
- * Define a function named "browseURL" that takes
- * a browser and validates it, as defined by "browsers"
- * If the browser doesn't exist, return false.
- * If the browser exists, return the value which is a partial URL.
- *
- * @param {String}
- * @return {String if true else return false}
- *
- */
 var browseURL = function( browserType ){
   if( browsers.hasOwnProperty(browserType) ){
-    return browsers[ browserType ];
+    return browsers[browserType];
   } else {
     return false;
   }
@@ -137,7 +126,10 @@ var browseURL = function( browserType ){
  * @return {String}
  *
  */
+var listLivingOrgClass = function(){
 
+
+};
 
 /* Step 26
  *
