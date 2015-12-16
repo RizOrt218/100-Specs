@@ -60,18 +60,6 @@ colors : {
 
 var linuxFlavors = [ "Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux" ];
 
-/* Step 15
- *
- * Declare an array named "DNA" with the
- * following values:
- *
- * "nucleatides"
- * "guanine"
- * "adenine"
- * "thymine"
- * "cytosine"
- *
- */
 var DNA = [ "nucleatides", "guanine", "adenine", "thymine", "cytosine" ];
 
 /* Step 16
@@ -85,7 +73,12 @@ var DNA = [ "nucleatides", "guanine", "adenine", "thymine", "cytosine" ];
  * Surface      => 320
  *
  */
-
+var laptopCosts = {
+  MacBook : 1500,
+  Alienware : 2500,
+  HP : 499,
+  Surface : 320
+};
 
 /* Step 17
  *
