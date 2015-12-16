@@ -479,16 +479,24 @@ function Scientist( name, money, age, gender, disciplines, discoveries ) {
   this.disciplines = [];
   this.discoveries = [];
 }
-
+//extends from class Person
 Scientist.prototype = Object.create( Person.prototype, {
   constructor : {
     value : Scientist
   }
 });
-
+//method addDiscipline
 Scientist.prototype.addDiscipline = function(){
-
+  return this.disciplines.push( "I discovered Gravity." );
 };
+//method checkDiscipline
+// Scientist.prototype.checkDiscipline = function( ) {
+//   if( this.disciplines === ){
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
 /* Step 36
  *
  * Define a class named "BankAccount" that has properties
@@ -509,7 +517,6 @@ Scientist.prototype.addDiscipline = function(){
  *   rob
  *
  */
-
 
 /* Step 37
  *
@@ -682,7 +689,9 @@ Scientist.prototype.addDiscipline = function(){
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
-
+function Animal( species ){
+  this.species = species;
+}
 
 /**
  * Step 51
