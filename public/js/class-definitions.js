@@ -377,12 +377,17 @@ SolarSystem.prototype.removePlanet = function( takeAway ){
  *   marries
  *
  */
-Person.prototype = PrincessLeia.prototype;
 
 function PrincessLeia ( name, money, age, gender, isInTrouble ){
   Person.call( this, name, money, age, gender );
   this.isInTrouble = null;
 }
+
+PrincessLeia.prototype = Object.create( Person.prototype, {
+  constructor : {
+    value : PrincessLeia
+  }
+});
 
 PrincessLeia.prototype.shootsGun = function( ){
   return "Leia shoots her gun wildly";
@@ -418,7 +423,18 @@ PrincessLeia.prototype.marries = function( loveInterest ){
  *   staplePapers
  *
  */
+function Stapler ( color, maxPapers ) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+}
 
+Stapler.prototype.staplePapers = function ( num ) {
+  if( num > this.maxPapers ){
+    return false;
+  } else {
+    return true;
+  }
+};
 
 /* Step 35
  *
