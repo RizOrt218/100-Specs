@@ -58,19 +58,6 @@ colors : {
   isDouble : true
 };
 
-/* Step 14
- *
- * Declare an array named "linuxFlavors"
- * with the following values:
- *
- * "Gentoo"
- * "Fedora"
- * "Debian"
- * "Slackware"
- * "Red Hat"
- * "Bieber Linux"
- *
- */
 var linuxFlavors = [ "Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux" ];
 
 /* Step 15
@@ -85,7 +72,7 @@ var linuxFlavors = [ "Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieb
  * "cytosine"
  *
  */
-
+var DNA = [ "nucleatides", "guanine", "adenine", "thymine", "cytosine" ];
 
 /* Step 16
  *
