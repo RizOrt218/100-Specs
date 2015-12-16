@@ -86,32 +86,18 @@ var sahara_river = function(){
   return "Nile River";
 };
 
-/* Step 21
- *
- * Define a function named "addNumbers"
- * that returns the sum of two numbers
- *
- * @param {Number}
- * @param {Number}
- * @return {Number}
- *
- */
 var addNumbers = function( x, y ){
   return x + y;
 };
 
-/* Step 22
- *
- * Define a function named "installLinux"
- * that takes a type of Linux as a parameter,
- * checks if it exists in "linuxFlavors" and
- * returns success or failure
- *
- * @param {String}
- * @return {Bool}
- *
- */
-
+var installLinux = function( linuxDistro ){
+  if( linuxFlavors.indexOf( linuxDistro ) > -1 ){
+    console.log(linuxFlavors.indexOf);
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /* Step 23
  *
