@@ -146,26 +146,44 @@ var listLivingOrgClass = function(){
  * @return {String}
  *
  */
-var favoritePlanet = function( perCurr ){
-  //console.log(perCurr);
-  //random planet generator
-  var random = Math.floor(Math.random() * planets.length);
+var favoritePlanet = function( currentPlanet ){
 
-  var index = planets.indexOf( perCurr );
+  //random planet generator
+  var randomPlanet = Math.floor(Math.random() * planets.length);
+
+  var index = planets.indexOf( currentPlanet );
   if( index > -1 ){
 
-    if( index === 0 && index === random ){
-      random -= 1;
-
-    } else if( index < 1 && index === random ){
-      random += 1;
+    if( index === 0 && index === randomPlanet ){
+      randomPlanet += 1;
     }
-      return "I'm from " + perCurr + ", but wish I could go to " + planets[random] + ".";
+    else if( index > 1 && index === randomPlanet ){
+      randomPlanet -= 1;
+    }
+      return "I'm from " + currentPlanet + ", but I wish I could go to " + planets[randomPlanet];
   } else {
-    return perCurr + " is not a planet!";
+    return currentPlanet + " is not a planet!";
   }
 };
 
+// var  favoritePlanet = function(currentPlanet){
+//   var randomNumber = Math.floor(Math.random()*planets.length);
+
+//   var index = planets.indexOf(currentPlanet);
+//   if(index > -1) {
+
+//     if(index=== 0 && index === randomNumber) {
+//       randomNumber += 1;
+//     }
+//     else if(index > 1 && index === randomNumber) {
+//       randomNumber -= 1;
+//     }
+//     return "I'm from " + currentPlanet + ", but I wish I could go to " + planets[randomNumber];
+//   }
+//   else {
+//     return currentPlanet + " is not a planet!";
+//   }
+// };
 /* Step 27
  *
  * Define a class named "Person" that has properties for
