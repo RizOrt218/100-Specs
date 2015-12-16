@@ -127,6 +127,13 @@ var browseURL = function( browserType ){
  *
  */
 var listLivingOrgClass = function(){
+  var unorderedList = document.createElement('ul');
+  livingOrganismClassification.forEach( function(element, index, array) {
+    var listItems = document.createElement('li');
+    listItems.appendChild( document.createTextNode(element) );
+    unorderedList.appendChild(listItems);
+  });
+  return unorderedList.outerHTML;
 
 
 };
