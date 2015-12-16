@@ -237,7 +237,13 @@ function purchaseLaptop( laptop ){
  *
  */
 
-
+function canTalkAbout( club ){
+  if( club === club_name ){
+    return false;
+  } else {
+    return true;
+  }
+}
 /* Step 30
  *
  * Define a class named "Pen" with a property for
@@ -258,8 +264,15 @@ function purchaseLaptop( laptop ){
  *   write
  *
  */
+function Pen ( color ){
+  this.color = color;
+}
 
+Pen.prototype.write = function( msg, color ){
+  this.msg = msg;
 
+  return this.color + ": " + msg;
+};
 /* Step 31
  *
  * Define a class named "Garden" with a property for
