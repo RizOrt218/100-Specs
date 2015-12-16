@@ -82,14 +82,6 @@ var beers = {
   Ale : [ "Light", "Golden" ]
 };
 
-/* Step 20
- *
- * Define a function named 'sahara_river'
- * that returns the string 'Nile River'
- *
- * @return {String}
- *
- */
 var sahara_river = function(){
   return "Nile River";
 };
@@ -104,7 +96,9 @@ var sahara_river = function(){
  * @return {Number}
  *
  */
-
+var addNumbers = function( x, y ){
+  return x + y;
+};
 
 /* Step 22
  *
