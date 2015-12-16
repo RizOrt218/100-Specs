@@ -689,8 +689,9 @@ Scientist.prototype.addDiscipline = function(){
  * @param {string} species The animal species
  * @param {string} gender  male or female
  */
-function Animal( species ){
+function Animal( species, gender ){
   this.species = species;
+  this.gender = gender;
 }
 
 /**
