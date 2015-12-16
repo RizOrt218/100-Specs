@@ -166,24 +166,7 @@ var favoritePlanet = function( currentPlanet ){
   }
 };
 
-// var  favoritePlanet = function(currentPlanet){
-//   var randomNumber = Math.floor(Math.random()*planets.length);
 
-//   var index = planets.indexOf(currentPlanet);
-//   if(index > -1) {
-
-//     if(index=== 0 && index === randomNumber) {
-//       randomNumber += 1;
-//     }
-//     else if(index > 1 && index === randomNumber) {
-//       randomNumber -= 1;
-//     }
-//     return "I'm from " + currentPlanet + ", but I wish I could go to " + planets[randomNumber];
-//   }
-//   else {
-//     return currentPlanet + " is not a planet!";
-//   }
-// };
 /* Step 27
  *
  * Define a class named "Person" that has properties for
@@ -206,6 +189,21 @@ var favoritePlanet = function( currentPlanet ){
  *   earnMoney
  *
  */
+function Person ( name, money, age, gender ){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+
+}
+
+Person.prototype.spendMoney = function( cash ){
+    return this.money -= cash;
+};
+
+Person.prototype.earnMoney = function( cash ){
+  return this.money += cash;
+};
 
 
 /* Step 28
