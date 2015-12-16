@@ -69,20 +69,6 @@ var laptopCosts = {
   Surface : 320
 };
 
-/* Step 17
- *
- * Declare an array named "livingOrganismClassification"
- * with the following values:
- *
- * "Kingdom"
- * "Phylum"
- * "Class"
- * "Order"
- * "Family"
- * "Genus"
- * "Species"
- *
- */
 var livingOrganismClassification = [ "Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species" ];
 
 /* Step 18
@@ -97,7 +83,7 @@ var livingOrganismClassification = [ "Kingdom", "Phylum", "Class", "Order", "Fam
  * "cvs"
  *
  */
-
+var scmList = [ "git", "svn", "mercurial", "bazaar", "cvs" ];
 
 /* Step 19
  *
