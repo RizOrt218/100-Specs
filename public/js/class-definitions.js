@@ -13,12 +13,6 @@ var golden_ratio = 1.61803398874;
 
 var earths_water_composition = 0.71;
 
-/* Step 8
- *
- * Declare a variable named "club_name"
- * and assign the value of club_name to "Fight Club"
- *
- */
 var club_name = "Fight Club";
 
 /* Step 9
@@ -30,7 +24,11 @@ var club_name = "Fight Club";
  *   male    => "male"
  *   unknown => undefined
  */
-
+var gender = {
+  female : "female",
+  male : "male",
+  unknown : undefined
+};
 
 /* Step 10
  *
