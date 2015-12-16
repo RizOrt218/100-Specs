@@ -62,17 +62,6 @@ var linuxFlavors = [ "Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieb
 
 var DNA = [ "nucleatides", "guanine", "adenine", "thymine", "cytosine" ];
 
-/* Step 16
- *
- * Define a literal object named "laptopCosts"
- * with properties and values set to:
- *
- * MacBook      => 1500
- * Alienware    => 2500
- * HP           => 499
- * Surface      => 320
- *
- */
 var laptopCosts = {
   MacBook : 1500,
   Alienware : 2500,
@@ -94,7 +83,7 @@ var laptopCosts = {
  * "Species"
  *
  */
-
+var livingOrganismClassification = [ "Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species" ];
 
 /* Step 18
  *
