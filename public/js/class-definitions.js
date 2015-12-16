@@ -125,8 +125,6 @@ var listLivingOrgClass = function(){
     unorderedList.appendChild(listItems);
   });
   return unorderedList.outerHTML;
-
-
 };
 
 /* Step 26
@@ -149,10 +147,22 @@ var listLivingOrgClass = function(){
  *
  */
 var favoritePlanet = function( perCurr ){
-  if( !(planets.hasOwnProperty( perCurr )) ){
-    return perCurr + " is not a planet!";
+  //console.log(perCurr);
+  //random planet generator
+  var random = Math.floor(Math.random() * planets.length);
+
+  var index = planets.indexOf( perCurr );
+  if( index > -1 ){
+
+    if( index === 0 && index === random ){
+      random -= 1;
+
+    } else if( index < 1 && index === random ){
+      random += 1;
+    }
+      return "I'm from " + perCurr + ", but wish I could go to " + planets[random] + ".";
   } else {
-    return planets[ perCurr ];
+    return perCurr + " is not a planet!";
   }
 };
 
