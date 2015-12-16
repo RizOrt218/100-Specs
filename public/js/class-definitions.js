@@ -480,6 +480,12 @@ function Scientist( name, money, age, gender, disciplines, discoveries ) {
   this.discoveries = [];
 }
 
+Scientist.prototype = Object.create( Person.prototype, {
+  constructor : {
+    value : Scientist
+  }
+});
+
 /* Step 36
  *
  * Define a class named "BankAccount" that has properties
