@@ -73,23 +73,6 @@ var livingOrganismClassification = [ "Kingdom", "Phylum", "Class", "Order", "Fam
 
 var scmList = [ "git", "svn", "mercurial", "bazaar", "cvs" ];
 
-/* Step 19
- *
- * Define a literal object named "beers" with
- * properties and values set to:
- *
- * IPA          => "Ale"
- * Lager        => "Strong"
- * Heffeweisen  => "German"
- * Stout        => [Array]
- *                  "Thick"
- *                  "Dark"
- * Porter       => "Bitter"
- * Ale          => [Array]
- *                  "Light"
- *                  "Golden"
- *
- */
 var beers = {
   IPA : "Ale",
   Lager : "Strong",
@@ -107,7 +90,9 @@ var beers = {
  * @return {String}
  *
  */
-
+var sahara_river = function(){
+  return "Nile River";
+};
 
 /* Step 21
  *
