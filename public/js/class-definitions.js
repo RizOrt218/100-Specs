@@ -474,7 +474,11 @@ Stapler.prototype.staplePapers = function ( num ) {
  *   addDiscovery
  *
  */
-
+function Scientist( name, money, age, gender, disciplines, discoveries ) {
+  Person.call( this, name, money, age, gender );
+  this.disciplines = [];
+  this.discoveries = [];
+}
 
 /* Step 36
  *
