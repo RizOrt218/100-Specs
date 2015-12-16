@@ -35,19 +35,6 @@ var domains = {
   "jsonformatter.curiousconcept.com" : "104.28.5.70"
 };
 
-/* Step 12
- *
- * Define a literal object named "browsers"
- * with properties and values set to:
- *
- *   Chromium   => "google.com"
- *   Safari     => "apple.com"
- *   Opera      => "opera.com"
- *   Firefox    => "mozilla.org"
- *   Sleipnir   => "fenrir-inc.com"
- *   Konqueror  => "konqueror.org"
- *
- */
 var browsers = {
   Chromium : "google.com",
   Safari : "apple.com",
@@ -73,7 +60,19 @@ var browsers = {
  *  isDouble  => true
  *
  */
+var rainbow = {
+colors : {
+  red : "#F0280A",
+  orange : "#FF8800",
+  yellow : "#FFDD00",
+  green : "#51AB0C",
+  blue : "#1593ED",
+  indigo : "#5215ED",
+  violet : "#A915ED",
+  },
 
+  isDouble : true
+};
 
 /* Step 14
  *
