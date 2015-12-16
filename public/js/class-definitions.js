@@ -486,6 +486,9 @@ Scientist.prototype = Object.create( Person.prototype, {
   }
 });
 
+Scientist.prototype.addDiscipline = function(){
+
+};
 /* Step 36
  *
  * Define a class named "BankAccount" that has properties
