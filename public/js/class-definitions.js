@@ -333,7 +333,9 @@ Garden.prototype.grow = function( ){
  *   removePlanet
  *
  */
-
+function SolarSystem ( planets ){
+  this.planets = [];
+}
 
 /* Step 33
  *
