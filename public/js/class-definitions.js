@@ -92,31 +92,22 @@ var addNumbers = function( x, y ){
 
 var installLinux = function( linuxDistro ){
   if( linuxFlavors.indexOf( linuxDistro ) > -1 ){
-    console.log(linuxFlavors.indexOf);
     return true;
   } else {
     return false;
   }
 };
 
-/* Step 23
- *
- * Define a function named "drink" that takes
- * a type of beer as a paramater. If it is not
- * a valid type of beer as defined in "beers",
- * return false. If it is valid, return the following phrases:
- *
- * "This {beerName} is {beerDescription}."
- *
- * Or, if there are multiple descriptions:
- *
- * "This {beerName is {beerDescription1} and {beerDescription2} and..."
- *
- * @param {String}
- * @return {Bool when False, String when True}
- *
- */
-
+var drink = function( type ){
+  if ( beers.hasOwnProperty(type) ){
+    if( Array.isArray( beers[type] ) ){
+    return "This " + type + " is " + beers[type][0] + " and " + beers[type][1] + ".";
+    }
+  return "This " + type  + " is " + beers[type] + ".";
+  } else {
+    return false;
+  }
+};
 
 /* Step 24
  *
@@ -129,7 +120,13 @@ var installLinux = function( linuxDistro ){
  * @return {String if true else return false}
  *
  */
-
+var browseURL = function( browserType ){
+  if( browsers.hasOwnProperty(browserType) ){
+    return browsers[ browserType ];
+  } else {
+    return false;
+  }
+};
 
 /* Step 25
  *
