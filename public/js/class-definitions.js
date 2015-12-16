@@ -344,6 +344,10 @@ SolarSystem.prototype.addPlanet = function( newPlanet ){
 SolarSystem.prototype.removePlanet = function( takeAway ){
   return this.planets.pop( takeAway );
 };
+
+function PrincessLeia ( ){
+
+}
 /* Step 33
  *
  * Define a class named "PrincessLeia" that is a subclass of "Person"
