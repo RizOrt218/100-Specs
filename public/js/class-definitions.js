@@ -117,15 +117,6 @@ var browseURL = function( browserType ){
   }
 };
 
-/* Step 25
- *
- * Define a function named "listLivingOrgClass" that
- * returns an HTML-formatted unordered list (<ul>) of all
- * living organism classifications as an list element(<li>)
- *
- * @return {String}
- *
- */
 var listLivingOrgClass = function(){
   var unorderedList = document.createElement('ul');
   livingOrganismClassification.forEach( function(element, index, array) {
@@ -157,7 +148,13 @@ var listLivingOrgClass = function(){
  * @return {String}
  *
  */
-
+var favoritePlanet = function( perCurr ){
+  if( !(planets.hasOwnProperty( perCurr )) ){
+    return perCurr + " is not a planet!";
+  } else {
+    return planets[ perCurr ];
+  }
+};
 
 /* Step 27
  *
