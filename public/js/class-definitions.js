@@ -9,12 +9,6 @@ var planets = [ 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranu
 
 var galilean_moons = [ 'Io', 'Europa', 'Ganymede', 'Callisto' ];
 
-/* Step 6 φ
- *
- * Declare a variable named "golden_ratio"
- * and assign the value of golden_ratio to 1.61803398874
- *
- */
 var golden_ratio = 1.61803398874;
 
 /* Step 7
@@ -23,7 +17,7 @@ var golden_ratio = 1.61803398874;
  * and assign the value of earths_water_composition to 0.71
  *
  */
-
+var earths_water_composition = 0.71;
 
 /* Step 8
  *
