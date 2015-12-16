@@ -71,18 +71,6 @@ var laptopCosts = {
 
 var livingOrganismClassification = [ "Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species" ];
 
-/* Step 18
- *
- * Declare an array named "scmList" with
- * the following values:
- *
- * "git"
- * "svn"
- * "mercurial"
- * "bazaar"
- * "cvs"
- *
- */
 var scmList = [ "git", "svn", "mercurial", "bazaar", "cvs" ];
 
 /* Step 19
@@ -102,7 +90,14 @@ var scmList = [ "git", "svn", "mercurial", "bazaar", "cvs" ];
  *                  "Golden"
  *
  */
-
+var beers = {
+  IPA : "Ale",
+  Lager : "Strong",
+  Heffeweisen : "German",
+  Stout : [ "Thick", "Dark" ],
+  Porter : "Bitter",
+  Ale : [ "Light", "Golden" ]
+};
 
 /* Step 20
  *
