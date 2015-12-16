@@ -7,13 +7,6 @@ var sahara_animal = "The Addax";
 
 var planets = [ 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune' ];
 
-/* Step 5
- *
- * Declare a variable named "galilean_moons"
- * and assign the value of galilean_moons to an array containing
- * each galilean moon of Jupiter
- *
- */
 var galilean_moons = [ 'Io', 'Europa', 'Ganymede', 'Callisto' ];
 
 /* Step 6 φ
@@ -22,7 +15,7 @@ var galilean_moons = [ 'Io', 'Europa', 'Ganymede', 'Callisto' ];
  * and assign the value of golden_ratio to 1.61803398874
  *
  */
-
+var golden_ratio = 1.61803398874;
 
 /* Step 7
  *
