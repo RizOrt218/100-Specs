@@ -309,7 +309,7 @@ Garden.prototype.water = function( ){
     return this.isWatered;
 };
 
-Garden.prototype.grow = function( ){
+Garden.prototype.grow = function(){
   if( this.isWatered === true ){
     return this.plantsTotal += 1;
   } else {
@@ -337,6 +337,13 @@ function SolarSystem ( planets ){
   this.planets = [];
 }
 
+SolarSystem.prototype.addPlanet = function( newPlanet ){
+  return this.planets.push( newPlanet );
+};
+
+SolarSystem.prototype.removePlanet = function( takeAway ){
+  return this.planets.pop( takeAway );
+};
 /* Step 33
  *
  * Define a class named "PrincessLeia" that is a subclass of "Person"
