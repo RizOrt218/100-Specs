@@ -715,7 +715,7 @@ function Vehicle( make, model ) {
  * value of the sides property to null.
  *
  */
-function Shape( sides ){
+function Shape( sides ) {
   this.sides = sides;
 }
 
@@ -726,7 +726,7 @@ function Shape( sides ){
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
-function Box( contents, isOpen ){
+function Box( contents, isOpen ) {
   this.contents = contents;
   this.isOpen = isOpen;
 }
@@ -737,7 +737,7 @@ function Box( contents, isOpen ){
  * Door class
  * @param {boolean} isOpen Whether the door is opened or closed
  */
-function Door( isOpen ){
+function Door( isOpen ) {
   this.isOpen = isOpen;
 }
 
@@ -748,7 +748,7 @@ function Door( isOpen ){
  * @param {number} size  The shoe size
  * @param {string} color The shoe color
  */
-function Shoe( size, color ){
+function Shoe( size, color ) {
   this.size = 6;
   this.color = 'red';
 }
@@ -759,7 +759,7 @@ function Shoe( size, color ){
  * House class
  * @param {number} stories How many stories tall the house is
  */
-function House( stories ){
+function House( stories ) {
   this.stories = stories;
 }
 
@@ -769,7 +769,9 @@ function House( stories ){
  * Lightbulb class
  * @param {boolean} isOn Whether the light is on or off
  */
-
+function Lightbulb( isOn ) {
+  this.isOn = isOn;
+}
 
 /**
  * Step 58
@@ -777,7 +779,9 @@ function House( stories ){
  * Cookie class
  * @param {string} flavor The cookie's flavor
  */
-
+function Cookie( flavor ) {
+  this.flavor = flavor;
+}
 
 /**
  * Step 59
@@ -785,7 +789,9 @@ function House( stories ){
  * Meal class
  * @param {Array} foods All the foods in the meal
  */
-
+function Meal( foods ) {
+  this.foods = foods;
+}
 
 /**
  * Create a new instance of the Classes you defined above, below!
@@ -794,7 +800,7 @@ function House( stories ){
 
 
 // Create 2 different species of animals
-var george;
+var george = new Animal( 'Monkey', 'male' );
 var nemo;
 
 // Create 2 different vehicles
