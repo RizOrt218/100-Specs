@@ -825,7 +825,7 @@ var dressShoes = new Shoe( 10, 'black' );
 
 // Create 2 houses
 var singleStory = new House( 1 );
-var twoStory;
+var twoStory = new House( 2 );
 
 // Create 2 lightbulbs
 var incandescent;
