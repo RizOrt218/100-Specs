@@ -816,7 +816,7 @@ var catBox = new Box( new Animal('Cat'), true );
 var christmasPresent = new Box( 'exist', false );
 
 // Create 2 doors
-var automaticDoor;
+var automaticDoor = new Door( true );
 var bankVault;
 
 // Create 2 shoes
