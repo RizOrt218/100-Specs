@@ -486,17 +486,17 @@ Scientist.prototype = Object.create( Person.prototype, {
   }
 });
 //method addDiscipline
-Scientist.prototype.addDiscipline = function(){
-  return this.disciplines.push( "I discovered Gravity." );
+Scientist.prototype.addDiscipline = function( discipline ) {
+  return this.disciplines.push( discovery );
 };
 //method checkDiscipline
-// Scientist.prototype.checkDiscipline = function( ) {
-//   if( this.disciplines === ){
-//     return true;
-//   } else {
-//     return false;
-//   }
-// };
+Scientist.prototype.checkDiscipline = function( ) {
+  if( this.disciplines.indexOf( discipline ) == -1) {
+    return false;
+  } else {
+    return true;
+  }
+};
 /* Step 36
  *
  * Define a class named "BankAccount" that has properties
@@ -749,8 +749,8 @@ function Door( isOpen ) {
  * @param {string} color The shoe color
  */
 function Shoe( size, color ) {
-  this.size = 6;
-  this.color = 'red';
+  this.size = size;
+  this.color = color;
 }
 
 /**
@@ -820,11 +820,11 @@ var automaticDoor = new Door( true );
 var bankVault = new Door( false );
 
 // Create 2 shoes
-var rubySlippers;
-var dressShoes;
+var rubySlippers = new Shoe( 7, 'red' );
+var dressShoes = new Shoe( 10, 'black' );
 
 // Create 2 houses
-var singleStory;
+var singleStory = new House( 1 );
 var twoStory;
 
 // Create 2 lightbulbs
