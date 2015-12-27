@@ -984,7 +984,13 @@ Shoe.prototype.findShoes = function( color, size ) {
  * storiesTooTall, return true, else return false.
  *
  */
-
+House.prototype.isATallStory = function(storiesTooTall) {
+  if( this.stories >= storiesTooTall ) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
  /* Step 88
  *
@@ -996,6 +1002,15 @@ Shoe.prototype.findShoes = function( color, size ) {
  *
  */
 
+Lightbulb.prototype.flipSwitch = function( on ) {
+  if( on === 'on' ) {
+    this.isOn = true;
+    return true;
+  } else {
+    this.isOn = false;
+    return false;
+  }
+};
 
  /* Step 89
  *
