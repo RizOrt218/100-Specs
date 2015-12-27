@@ -486,8 +486,8 @@ Scientist.prototype = Object.create( Person.prototype, {
   }
 });
 //method addDiscipline
-Scientist.prototype.addDiscipline = function( discipline ) {
-  return this.disciplines.push( discovery );
+Scientist.prototype.addDiscipline = function( disciplines ) {
+  return this.disciplines.push(disciplines);
 };
 //method checkDiscipline
 Scientist.prototype.checkDiscipline = function( ) {
@@ -716,7 +716,7 @@ function Vehicle( make, model ) {
  *
  */
 function Shape( sides ) {
-  this.sides = sides;
+  this.sides = null;
 }
 
 /**
@@ -949,7 +949,9 @@ Box.prototype.openBox = function( ){
  * Return true if openClose opens the door, false if openClose closes the door.
  *
  */
+Door.prototype.openClose = function( ) {
 
+};
 
 /* Step 86
  *
