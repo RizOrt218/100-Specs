@@ -487,7 +487,7 @@ Scientist.prototype = Object.create( Person.prototype, {
 });
 //method addDiscipline
 Scientist.prototype.addDiscipline = function( disciplines ) {
-  return this.disciplines.push(disciplines);
+  return this.disciplines.push( disciplines );
 };
 //method checkDiscipline
 Scientist.prototype.checkDiscipline = function( disciplines ) {
@@ -499,9 +499,9 @@ Scientist.prototype.checkDiscipline = function( disciplines ) {
 };
 
 //method discovery
-Scientist.prototype.addDiscovery = function() {
-
-}
+Scientist.prototype.addDiscovery = function( discovery ) {
+  return this.discovery = 'I discovered Gravity.';
+};
 /* Step 36
  *
  * Define a class named "BankAccount" that has properties
@@ -909,6 +909,7 @@ Vehicle.prototype.drive = function( streetName ) {
  *
  */
 Shape.prototype.getType = function( ) {
+
   if ( this.sides === 3 ) {
     return 'triangle';
   } else if ( this.sides === 4 ) {
@@ -955,7 +956,13 @@ Box.prototype.openBox = function( ){
  *
  */
 Door.prototype.openClose = function( ) {
-
+  if (this.isOpen) {
+    this.isOpen = false;
+    return false;
+  } else {
+    this.isOpen = true;
+    return true;
+  }
 };
 
 /* Step 86
