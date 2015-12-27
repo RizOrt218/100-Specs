@@ -497,6 +497,11 @@ Scientist.prototype.checkDiscipline = function( disciplines ) {
     return true;
   }
 };
+
+//method discovery
+Scientist.prototype.addDiscovery = function() {
+
+}
 /* Step 36
  *
  * Define a class named "BankAccount" that has properties
