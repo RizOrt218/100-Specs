@@ -490,8 +490,8 @@ Scientist.prototype.addDiscipline = function( disciplines ) {
   return this.disciplines.push(disciplines);
 };
 //method checkDiscipline
-Scientist.prototype.checkDiscipline = function( ) {
-  if( this.disciplines.indexOf( discipline ) == -1) {
+Scientist.prototype.checkDiscipline = function( disciplines ) {
+  if( this.disciplines.indexOf( disciplines ) == -1) {
     return false;
   } else {
     return true;
